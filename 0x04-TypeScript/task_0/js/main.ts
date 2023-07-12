@@ -1,15 +1,15 @@
 interface Student {
-main.js firstName: string;
-main.js lastName: string;
-main.js age: number;
-main.js location: string;
+	firstName: string;
+	lastName: string;
+	age: number;
+	location: string;
 }
 
 const student1: Student = {
-main.js firstName: "Zeliq",
-main.js lastName: "Shannon",
-main.js age: 40,
-main.js location: "Nakuru"
+	firstName: "Zeliq",
+	lastName: "Shannon",
+	age: 40,
+	location: "Nakuru"
 };
 
 const student2: Student = {
@@ -21,16 +21,16 @@ const student2: Student = {
 
 const studentsList: Student[] = [student1, student2];
 
-const table = document.createElement(table);
-const tbody = document.createElement(tbody);
+const table = document.createElement('table');
+const tbody = document.createElement('tbody');
 
 table.style.background = "pink";
 table.appendChild(tbody);
 
 studentsList.forEach((student: Student): void => {
-  const row = document.createElement(tr);
-  const nameCell = document.createElement(td);
-  const locationCell = document.createElement(td);
+  const row = document.createElement('tr');
+  const nameCell = document.createElement('td');
+  const locationCell = document.createElement('td');
 
   nameCell.textContent = student.firstName;
   locationCell.textContent = student.location;
